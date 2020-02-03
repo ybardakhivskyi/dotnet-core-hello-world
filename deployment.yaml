@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app_deployment
+  name: appdeployment
   labels:
-    app: hello_world
+    app: hello-world
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello_world
+      app: hello-world
   template:
     metadata:
       labels:
-        app: hello_world
+        app: hello-world
     spec:
       containers:
       - name: samleimg
