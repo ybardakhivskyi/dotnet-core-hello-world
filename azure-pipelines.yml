@@ -39,6 +39,6 @@ stages:
           $(tag)
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '/home/vsts/work/1/a/deployment.yaml'
+        PathtoPublish: '/home/vsts/work/1/s/deployment.yaml'
         ArtifactName: 'deployment'
         publishLocation: 'Container'
