@@ -37,3 +37,8 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '/home/vsts/work/1/s/deployment.yaml'
+        ArtifactName: 'deployment'
+        publishLocation: 'Container'
