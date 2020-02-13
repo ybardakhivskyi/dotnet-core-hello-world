@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: samleimg
-        image: sampler.azurecr.io/samleimg:latest
+        image: sampler.azurecr.io/sampleimg:latest
         ports:
         - containerPort: 80
       imagePullSecrets:
